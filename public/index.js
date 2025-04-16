@@ -1,6 +1,4 @@
 const IMAGES = {
-    hotelrajdhanilogo: '/img/logo.png',
-    // hotelrajdhanilogo: '/img/hotelrajdhanilogo.jpg',
     landing1: '/img/landing1.jpeg',
     landing2: '/img/landing2.jpeg',
     landing3: '/img/landing3.jpg',

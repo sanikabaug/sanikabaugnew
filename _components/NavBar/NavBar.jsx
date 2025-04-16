@@ -143,7 +143,7 @@ const NavBar = () => {
           >
             <img
               src={IMAGES.mainLogo}
-              alt="hotelrajdhanilogo"
+              alt="sanikalogo"
               className="w-40 lg:w-60 h-16 object-contain"
             />
           </div>

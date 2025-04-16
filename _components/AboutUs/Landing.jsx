@@ -8,15 +8,12 @@ import Image from 'next/image';
 
 const Landing = (props) => {
   return (
-    <div className="relative w-full h-[38rem] md:h-[38rem] lg:h-[40rem]">
+    <div className="relative w-full h-[38rem] md:h-[38rem] lg:h-[70vh]">
 
-      {/* Title and Subtitle Section */}
+      
       <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-600 drop-shadow-2xl z-20 font-serif px-4 text-center">
-        <span className="text-2xl md:text-4xl lg:text-5xl bg-black text-gray-100 p-2 rounded-lg px-4 bg-opacity-30">
+        <span className="text-2xl md:text-4xl lg:text-7xl text-gray-100 p-2 px-4 font-serif">
           About Us
-        </span>
-        <span className="text-sm md:text-lg lg:text-2xl bg-black text-gray-100 mt-4 p-2 rounded-lg px-4 bg-opacity-30">
-          Discover the story of Sanika Baug and experience the perfect blend of tradition, luxury, and exceptional hospitality.
         </span>
       </div>
 
@@ -55,21 +52,12 @@ const Landing = (props) => {
               </div>
             ))}
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-4 md:right-20 right-10 flex-col justify-end hidden lg:flex z-20">
-            <div className="flex flex-col items-center justify-end gap-2 md:gap-4 animate-bounce">
-              <span className="transform rotate-90 rounded font-semibold">
-                Scroll
-              </span>
-              <span>
-                <MoveDown />
-              </span>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Gradient */}
-        <div className="absolute bottom-0 left-0 h-8 md:h-10 w-full z-10 bg-gradient-to-t from-white via-white to-transparent"></div>
+        <div className="absolute bottom-0 left-0 h-8 md:h-10 w-full z-10 bg-gray-200 flex justify-center items-center text-center font-semibold text-lg py-8">
+          Home{" > "}About Us
+        </div>
       </div>
     </div>
   );

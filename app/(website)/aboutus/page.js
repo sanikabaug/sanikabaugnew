@@ -7,12 +7,12 @@ import CardSection from '@/_components/AboutUs/CardSection'
 
 const Aboutus = () => {
   return (
-    <div className='flex flex-col gap-10 lg:gap-16'>
+    <div className='flex flex-col'>
       <Landing />
       <AboutUs />
       <Description />
-      <Reviews />
       <CardSection />
+      <Reviews />
     </div>
   )
 }

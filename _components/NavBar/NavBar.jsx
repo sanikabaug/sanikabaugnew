@@ -57,7 +57,7 @@ const NavBar = () => {
     { name: "Gallery", url: "/gallery" },
     { name: "Testimonials", url: "/testimonials" },
     { name: "Blogs", url: "/blog" },
-    { name: "Contact", url: "/contact" },
+    { name: "Contact", url: "/contactus" },
   ];
 
   const handleMouseEnter = (index) => setActiveDropdown(index);

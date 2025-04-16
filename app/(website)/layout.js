@@ -6,9 +6,9 @@ import IMAGES from "@/public";
 import { Providers } from "@/app/providers";
 
 export const metadata = {
-  title: "Sanika Baug - Best Family Hotel in Halol Near Pavagadh",
-  description: "Best Family Hotel in Halol Near Pavagadh",
-  icons: IMAGES.sitelogo,
+  title: "Sanika Baug - Best Family Hotel in Halol Near karjat",
+  description: "Best Family Farmstay in Karjat",
+  icons: IMAGES.mainLogo,
 };
 
 export default function RootLayout({ children }) {

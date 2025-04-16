@@ -377,7 +377,7 @@ const Filterpage = () => {
         {
             id: "1",
             roomname: "Single Bed Non AC Room",
-            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of Pavagadh. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
+            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of karjat. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
             value: true,
             amount: "1000",
             adultCount: "2",
@@ -386,7 +386,7 @@ const Filterpage = () => {
         {
             id: "2",
             roomname: "Double Bed Non AC Room",
-            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of Pavagadh. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
+            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of karjat. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
             value: true,
             amount: "2000",
             adultCount: "2",
@@ -395,7 +395,7 @@ const Filterpage = () => {
         {
             id: "3",
             roomname: "Double Bed AC Room",
-            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of Pavagadh. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
+            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of karjat. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
             value: true,
             amount: "3000",
             adultCount: "2",
@@ -404,7 +404,7 @@ const Filterpage = () => {
         {
             id: "4",
             roomname: "Triple Bed Non AC Room",
-            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of Pavagadh. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
+            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of karjat. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
             value: true,
             amount: "4000",
             adultCount: "2",
@@ -413,7 +413,7 @@ const Filterpage = () => {
         {
             id: "5",
             roomname: "Super Deluxe AC Room",
-            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of Pavagadh. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
+            intro: `Experience ultimate comfort and relaxation in our Double-Bed AC Rooms at Sanika Baug. Designed for a peaceful stay, these rooms feature spacious interiors, modern amenities, and a cool, refreshing ambiance to help you unwind after a day of exploring the beautiful surroundings of karjat. Whether you're here for a short getaway or an extended stay, our AC rooms offer a perfect blend of comfort and convenience, ensuring you have an unforgettable experience.`,
             value: true,
             amount: "5000",
             adultCount: "2",

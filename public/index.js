@@ -16,7 +16,7 @@ const IMAGES = {
     outsideview: '/img/outsideview.jpeg',
     mahakalikatemple: '/img/mahakalikatemple.jpg',
     jambughoda: '/img/jambughoda.jpg',
-    pavagadhpark: '/img/pavagadhpark.jpg',
+    karjatpark: '/img/karjatpark.jpg',
     vadatalav: '/img/vadatalav.jpg',
     waterfall: '/img/waterfall.jpg',
     jaintemple: '/img/jaintemple.jpeg',

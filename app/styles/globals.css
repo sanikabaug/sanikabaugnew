@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f5f9;
+}
+
+
+/* Example: Override for a specific container */
+.custom-scrollbar {
+  overflow-x: auto; /* Ensure scrolling is enabled */
+}
+
+/* Show scrollbar for the specific container */
+.custom-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #e2e8f0; /* Adjust as needed */
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #94a3b8; /* Adjust as needed */
+  border-radius: 50px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b; /* Adjust as needed */
+}
+
+
+
+.custom-scrollbary {
+  overflow-y: auto; /* Ensure scrolling is enabled */
+  padding: 0 10px 0 0;
+}
+
+/* Show scrollbar for the specific container */
+.custom-scrollbary::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbary::-webkit-scrollbar-track {
+  background: #e2e8f0; /* Adjust as needed */
+  border-radius: 5px;
+}
+
+.custom-scrollbary::-webkit-scrollbar-thumb {
+  background: #94a3b8; /* Adjust as needed */
+  border-radius: 50px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b; /* Adjust as needed */
+}
+
+
+@keyframes pulse-wave {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  @layer utilities {
+    .animate-wave {
+      animation: pulse-wave 1.5s ease-in-out infinite;
+      background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+      background-size: 200% 100%;
+    }
+  }

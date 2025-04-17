@@ -2,13 +2,15 @@
 import React, { useState } from "react";
 import { Button, Divider } from "@nextui-org/react";
 import { siteConfig } from "@/config/siteConfig";
-import { Link } from "@nextui-org/link";
+import Link from 'next/link';
 
 import { usePathname } from "next/navigation";
 
 import { today, getLocalTimeZone } from "@internationalized/date";
-import { Facebook,
-  Instagram } from "lucide-react";
+import {
+  Facebook,
+  Instagram
+} from "lucide-react";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -66,67 +68,70 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#1f2033] text-white pt-16">
-    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
-      {/* Contact Info */}
-      <div>
-        <h3 className="text-xl  mb-4 font-serif">Contact Us</h3>
-        <p className="text-sm mb-2">
-          <span className="font-bold">Add:</span> At.bendesa, post, Posri road, tal, Tiware, Karjat, Maharashtra 410201
-        </p>
-        <p className="text-sm mb-2">
-          <span className="font-bold">Email:</span> sanikabag1701@gmail.com
-        </p>
-        <p className="text-sm mb-4">
-          <span className="font-bold">Phone:</span> +91 82374 16879
-        </p>
-        <div className="flex space-x-4">
-          <a href="#" className="hover:text-[#c47a5a]"><Facebook /></a>
-          <a href="#" className="hover:text-[#c47a5a]"><Instagram /></a>
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-xl  mb-4 font-serif">Contact Us</h3>
+          <p className="text-sm mb-2">
+            <span className="font-bold">Add:</span> At.bendesa, post, Posri road, tal, Tiware, Karjat, Maharashtra 410201
+          </p>
+          <p className="text-sm mb-2">
+            <span className="font-bold">Email:</span> sanikabag1701@gmail.com
+          </p>
+          <p className="text-sm mb-4">
+            <span className="font-bold">Phone:</span> +91 82374 16879
+          </p>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:text-[#c47a5a]"><Facebook /></a>
+            <a href="#" className="hover:text-[#c47a5a]"><Instagram /></a>
+          </div>
+        </div>
+
+        {/* Links */}
+        <div>
+          <h3 className="text-xl  mb-4 font-serif">Links</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="/aboutus" className="hover:text-[#c47a5a]">About Us</a></li>
+            <li><a href="/gallery" className="hover:text-[#c47a5a]">Gallery</a></li>
+            <li><a href="/testimonials" className="hover:text-[#c47a5a]">Testimonials</a></li>
+            <li><Link href="/blog" className="">
+              <span>Blog</span>
+            </Link></li>
+            <li><a href="/contactus" className="hover:text-[#c47a5a]">Contact Us</a></li>
+          </ul>
+        </div>
+
+        {/* Booking Hours */}
+        <div>
+          <h3 className="text-xl  mb-4 font-serif">Booking Hours</h3>
+          <p className="text-sm">Mon – Sun: 10:00 AM – 07:00 PM</p>
+        </div>
+
+        {/* Newsletter */}
+        <div>
+          <h3 className="text-xl  mb-4 font-serif">Newsletter</h3>
+          <form className="flex">
+            <input
+              type="email"
+              placeholder="Email address"
+              className="w-full px-4 py-2 text-sm bg-transparent border border-gray-500 placeholder:text-gray-400 focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="bg-[#c47a5a] text-white  px-6 py-2 text-sm"
+            >
+              SUBSCRIBE
+            </button>
+          </form>
         </div>
       </div>
 
-      {/* Links */}
-      <div>
-        <h3 className="text-xl  mb-4 font-serif">Links</h3>
-        <ul className="space-y-2 text-sm">
-          <li><a href="#" className="hover:text-[#c47a5a]">About Us</a></li>
-          <li><a href="#" className="hover:text-[#c47a5a]">Gallery</a></li>
-          <li><a href="#" className="hover:text-[#c47a5a]">Villas</a></li>
-          <li><a href="#" className="hover:text-[#c47a5a]">Contact Us</a></li>
-        </ul>
+      {/* Bottom Footer */}
+      <div className="border-t border-gray-700 mt-10 py-4 text-center text-sm text-gray-400 px-6">
+        Copyright 2025 by <span className="text-white">Prospera Hospitality Pvt. Ltd.</span>. All Right Reserved.
       </div>
 
-      {/* Booking Hours */}
-      <div>
-        <h3 className="text-xl  mb-4 font-serif">Booking Hours</h3>
-        <p className="text-sm">Mon – Sun: 10:00 AM – 07:00 PM</p>
-      </div>
 
-      {/* Newsletter */}
-      <div>
-        <h3 className="text-xl  mb-4 font-serif">Newsletter</h3>
-        <form className="flex">
-          <input
-            type="email"
-            placeholder="Email address"
-            className="w-full px-4 py-2 text-sm bg-transparent border border-gray-500 placeholder:text-gray-400 focus:outline-none"
-          />
-          <button
-            type="submit"
-            className="bg-[#c47a5a] text-white  px-6 py-2 text-sm"
-          >
-            SUBSCRIBE
-          </button>
-        </form>
-      </div>
-    </div>
-
-    {/* Bottom Footer */}
-    <div className="border-t border-gray-700 mt-10 py-4 text-center text-sm text-gray-400 px-6">
-      Copyright 2025 by <span className="text-white">Prospera Hospitality Pvt. Ltd.</span>. All Right Reserved.
-    </div>
-
-    
-  </footer>
+    </footer>
   );
 }

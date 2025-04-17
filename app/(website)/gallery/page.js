@@ -1,9 +1,13 @@
 import React from 'react'
 import Gallery from '@/_components/Gallery/Gallery'
+import Landing from '@/_components/Gallery/Landing'
 
 const GalleryPhotos = () => {
   return (
-    <Gallery />
+    <div>
+      <Landing />
+      <Gallery />
+    </div>
   )
 }
 

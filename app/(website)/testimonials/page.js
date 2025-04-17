@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import TestCard from '@/_components/Testimonials/Testimonials'
+import Landing from '@/_components/Testimonials/Landing'
 
 const TestimonialsPage = () => {
 
@@ -25,6 +26,7 @@ const TestimonialsPage = () => {
 
   return (
     <div>
+      <Landing />
       <TestCard packageReviews={packageReviews} />
     </div>
   )

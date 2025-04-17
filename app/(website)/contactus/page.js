@@ -1,9 +1,13 @@
 import React from 'react'
 import ContactUs from '@/_components/ContactUs/ContactUs'
+import Landing from '@/_components/ContactUs/Landing'
 
 const ContactUss = () => {
   return (
-    <ContactUs />
+    <div>
+      <Landing />
+      <ContactUs />
+    </div>
   )
 }
 

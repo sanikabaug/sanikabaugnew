@@ -13,7 +13,7 @@ const Landing = (props) => {
       
       <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-600 drop-shadow-2xl z-20 font-serif px-4 text-center mb-16">
         <span className="text-4xl lg:text-7xl text-gray-100 p-2 px-4 font-serif">
-          About Us
+          Gallery
         </span>
       </div>
 
@@ -21,7 +21,7 @@ const Landing = (props) => {
       <div className="relative w-full h-full flex justify-center items-center bg-black opacity-95">
         {/* Background Image */}
         <Image
-          src={IMAGES[79]}
+          src={IMAGES[82]}
           alt="landing-bg"
           fill
           className="object-cover"
@@ -56,11 +56,11 @@ const Landing = (props) => {
 
         <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
 
-        <div className="absolute bottom-0 top-0 left-0 h-28 lg:h-8 w-full z-10 bg-gradient-to-t from-transparent via-black to-black"></div>
+        <div className="absolute bottom-0 top-0 left-0 h-0 lg:h-8 w-full z-10 bg-gradient-to-t from-transparent via-black to-black"></div>
 
         {/* Bottom Gradient */}
         <div className="absolute bottom-0 left-0 h-8 md:h-10 w-full z-10 bg-gray-200 flex justify-center items-center text-center font-semibold text-lg py-8">
-          Home{" > "}About Us
+          Home{" > "}Gallery
         </div>
       </div>
     </div>

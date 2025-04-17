@@ -50,10 +50,13 @@ const AboutUs = () => {
             About Sanika Baug
           </p>
           <div className="flex justify-start w-full ">
-            <div className="text-2xl lg:text-6xl text-black font-serif">
+            <div className="text-2xl lg:text-6xl text-black font-serif lg:block hidden">
               <p>Serene Farmstay</p>
               <p>in The Heart of</p>
               <p>Karjat</p>
+            </div>
+            <div className="text-3xl lg:text-6xl text-black font-serif lg:hidden block">
+              <p>Serene Farmstay in The Heart of Karjat</p>
             </div>
           </div>
           <div className="flex flex-col gap-0">
@@ -67,7 +70,7 @@ const AboutUs = () => {
 Reconnect with nature, celebrate special moments, or just take a break from the city—Sanika Baug Farmstay is your perfect countryside getaway in Karjat.
             </p>
 
-              <button className="bg-[#F5F5DC] px-6  py-3 rounded-full text-[#333333] flex-1 font-semibold mt-16 w-36">
+              <button className="bg-gray-800 text-gray-100 px-6  py-3 rounded-full flex-1 font-semibold mt-16 w-36">
                 Book Now
               </button>
       
@@ -75,7 +78,9 @@ Reconnect with nature, celebrate special moments, or just take a break from the 
 
           </div>
         </div>
-        <div className="flex w-full lg:w-[50%] h-full  justify-center items-center relative mt-24 lg:my-0">
+
+
+        <div className="lg:flex w-full lg:w-[50%] h-full  justify-center items-center relative mt-24 lg:my-0 hidden">
           <div className="flex justify-center items-center h-full w-full translate-x-2 lg:translate-x-16 z-10 mx-auto">
             <motion.div
               className="w-full h-full  text-white flex items-center justify-center "
@@ -101,6 +106,37 @@ Reconnect with nature, celebrate special moments, or just take a break from the 
                 src={IMAGES[80]}
                 alt="xyz"
                 className="w-72 h-72 object-contain "
+              />
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="flex w-full lg:w-[50%] h-full  justify-center items-center relative mt-24 lg:my-0 lg:hidden">
+          <div className="flex justify-center items-center h-full w-full translate-x-2 lg:translate-x-16 z-10 mx-auto">
+            <motion.div
+              className="w-full h-full  text-white flex items-center justify-center "
+              initial={{ y: 0 }}
+              animate={{ y: limitY(-scrollY / 20) }}
+              transition={{ type: "spring", stiffness: 100, damping: 20 }}
+            >
+              <img
+                src={IMAGES[81]}
+                alt="abc"
+                className="w-full h-full object-contain shadow-xl"
+              />
+            </motion.div>
+          </div>
+          <div className="flex justify-center items-center h-full w-full -translate-x-2 lg:-translate-x-16 z-20 mx-auto">
+            <motion.div
+              className="w-full h-full  text-white flex items-center justify-center "
+              initial={{ y: 0 }}
+              animate={{ y: limitY(scrollY / 30) }}
+              transition={{ type: "spring", stiffness: 100, damping: 20 }}
+            >
+              <img
+                src={IMAGES[80]}
+                alt="xyz"
+                className="w-full h-full object-contain shadow-xl"
               />
             </motion.div>
           </div>

@@ -70,7 +70,7 @@ const AboutUs = () => {
 Reconnect with nature, celebrate special moments, or just take a break from the city—Sanika Baug Farmstay is your perfect countryside getaway in Karjat.
             </p>
 
-              <button className="bg-gray-800 text-gray-100 px-6  py-3 rounded-full flex-1 font-semibold mt-16 w-36">
+              <button className="bg-gray-800 text-gray-100 px-6  py-3 rounded-full flex-1 font-semibold mt-16 w-36" onClick={(e) => window.location.href='/contactus'}>
                 Book Now
               </button>
       

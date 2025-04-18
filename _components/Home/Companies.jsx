@@ -168,7 +168,7 @@ const CorporateGuestsSection = () => {
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-6">
             Looking for a Relaxing Vacation <br /> at Farmhouse?
           </h1>
-          <button className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded transition duration-300">
+          <button className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded transition duration-300" onClick={(e) => window.location.href='/contactus'}>
             BOOK YOUR STAY
           </button>
         </div>

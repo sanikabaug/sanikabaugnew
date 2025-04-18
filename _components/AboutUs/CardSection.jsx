@@ -163,9 +163,9 @@ const CardSection = () => {
       >
         <div className="bg-black w-full h-full bg-opacity-50 p-8 rounded-md flex flex-col justify-center items-center text-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-6">
-            Looking for a Relaxing Villas <br /> Vacation Rental?
+            Looking for a Relaxing Vacation <br /> in Farmhouse?
           </h1>
-          <button className="bg-[#c47a5a] hover:bg-[#b1694a] text-white font-semibold py-3 px-6 rounded transition duration-300">
+          <button className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded transition duration-300" onClick={(e) => window.location.href='/contactus'}>
             BOOK YOUR STAY
           </button>
         </div>

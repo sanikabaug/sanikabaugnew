@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import db from "@/config/mongodbConfig";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -21,8 +20,6 @@ transporter.verify(function (error, success) {
 
 export async function POST(request) {
   const payload = await request.json();
-
-  await db.connect();
 
 if (payload.operation === "sendcontactmail") {
 

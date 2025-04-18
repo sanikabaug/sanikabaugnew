@@ -35,7 +35,7 @@ const Placestovisit = () => {
         formData: formData,
       }
 
-      const emailresponse = await fetch(`/api/send-email`, {
+      const emailresponse = await fetch('/api/send-email', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,9 +51,10 @@ const Placestovisit = () => {
     sendEmail(formData)
     setFormData({
       name: '',
-      email: '',
       phone: '',
-      message: ''
+      email: '',
+      message: '',
+      termsAccepted: false,
     })
   };
 

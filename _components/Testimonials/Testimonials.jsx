@@ -16,7 +16,7 @@ import { Button } from "@nextui-org/react";
 import { Spinner } from "@nextui-org/react";
 
 const TestCard = ({ packageReviews, allPackages }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [selectedReview, setSelectedReview] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
@@ -234,16 +234,11 @@ const TestCard = ({ packageReviews, allPackages }) => {
     setSortOrder(event.target.value);
   };
 
-
-
-  useEffect(() => {
-    if (packageReviews?.length > 0) {
-      // setFilteredReviews(packageReviews);
-      setIsLoading(false)
-    }
-  }, [packageReviews]);
-
-
+  // useEffect(() => {
+  //   if (packageReviews?.length > 0) {
+  //     setIsLoading(false)
+  //   }
+  // }, [packageReviews]);
 
   useEffect(() => {
     if (sortOrder) {
@@ -257,34 +252,27 @@ const TestCard = ({ packageReviews, allPackages }) => {
             return dateA - dateB;
           }
         });
-        // setFilteredReviews(sorted);
       };
       sortTrips();
     }
   }, [sortOrder]);
 
-  // Calculate total pages
   const totalPages = Math.ceil(filteredReviews.length / reviewsPerPage);
 
-  // Get current reviews based on the page
   const currentReviews = filteredReviews.slice(
     (currentPage - 1) * reviewsPerPage,
     currentPage * reviewsPerPage
   );
 
-  // Function to handle page change
   const handlePageChange = (page) => {
     if (page < 1 || page > totalPages) return;
     setCurrentPage(page);
   };
 
-  // Function to open modal and store the selected review
   const handleReadMore = (review) => {
     setSelectedReview(review);
     onOpen();
   };
-
-
 
   return (
     <div className="py-10 flex flex-col gap-8">

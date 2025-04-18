@@ -265,11 +265,61 @@
 
 
 
-
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const ContactUs = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form Submitted:', formData);
+
+        let sendEmail = async (formData) => {
+          const payload = {
+            operation: "sendcontactmail",
+            formData: formData,
+          }
+
+          const emailresponse = await fetch(`/api/send-email`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload)
+          });
+          const emailresult = await emailresponse.json();
+
+          alert("Request sent successfully!")
+          
+        }
+
+        sendEmail(formData)
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        })
+
+  };
+
+
   return (
     <section className="py-20 px-4 bg-gray-100 text-[#1f2033]">
       <div className="max-w-7xl mx-auto">
@@ -312,24 +362,39 @@ const ContactUs = () => {
 
 
             {/* Contact Form */}
-            <form className="flex flex-col justify-between h-full py-12  px-4 lg:p-16">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col justify-between h-full py-12 px-4 lg:p-16"
+            >
               <div className="space-y-4 h-full">
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Your Name"
                   className="w-full border-b border-gray-300 p-2 focus:outline-none"
                 />
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Your Email"
                   className="w-full border-b border-gray-300 p-2 focus:outline-none"
                 />
                 <input
                   type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Your Phone Number"
                   className="w-full border-b border-gray-300 p-2 focus:outline-none"
                 />
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Message"
                   className="w-full border-b border-gray-300 p-2 focus:outline-none"
                   rows={3}
@@ -351,7 +416,7 @@ const ContactUs = () => {
               title="Sanika Baug Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.4127593488273!2d73.33927972620255!3d18.946834205848546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7fb8e775a93c1%3A0x58b38e567d801307!2sSanika%20Baug!5e0!3m2!1sen!2sin!4v1744714682230!5m2!1sen!2sin"
               width="100%"
-              height="450"
+              height="510"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"

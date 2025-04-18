@@ -97,7 +97,7 @@ const Landing = (props) => {
                         as you step into our lavishly adorned farmstay.
                     </span>
                 </div>
-                <Button className="bg-gray-700 text-white font-semibold mt-6 rounded-md ml-4 text-sm">
+                <Button className="bg-gray-200 hover:bg-gray-600 hover:text-white text-black font-semibold mt-6 rounded-md ml-4 text-md p-6 tracking-wider" onPress={() => window.location.href = '/contactus'}>
                     Book Your Stay
                 </Button>
             </div>
@@ -134,14 +134,7 @@ const Landing = (props) => {
                                 <p className="w-full md:w-[80%] lg:w-[70%] text-sm sm:text-base md:text-lg text-gray-200 font-medium">
                                     {e.description}
                                 </p>
-                                <Link href="/contact-us">
-                                    <Button
-                                        radius="full"
-                                        className="bg-[#800000] text-white font-semibold text-sm sm:text-base px-6 py-3"
-                                    >
-                                        Let’s Get Started!
-                                    </Button>
-                                </Link>
+                               
                             </div>
                         ))}
                     </div>

@@ -251,7 +251,7 @@ const NavBar = () => {
 
           {/* Book Now Button */}
           <Link
-            href={`/filterpage?checkindate=${checkindate}&checkoutdate=${checkoutdate}&adultsSelect=1&childSelect=0`}
+            href={`/contactus`}
             className="hidden lg:flex"
           >
             <Button

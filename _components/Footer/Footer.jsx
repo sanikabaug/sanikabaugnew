@@ -104,25 +104,25 @@ export default function Footer() {
         {/* Booking Hours */}
         <div>
           <h3 className="text-xl  mb-4 font-serif">Booking Hours</h3>
-          <p className="text-sm">Mon – Sun: 10:00 AM – 07:00 PM</p>
+          <p className="text-sm">Mon – Sun: 12:00 AM – 11:59 PM</p>
         </div>
 
         {/* Newsletter */}
         <div>
-          <h3 className="text-xl  mb-4 font-serif">Newsletter</h3>
-          <form className="flex">
-            <input
-              type="email"
-              placeholder="Email address"
-              className="w-full px-4 py-2 text-sm bg-transparent border border-gray-500 placeholder:text-gray-400 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="bg-[#c47a5a] text-white  px-6 py-2 text-sm"
-            >
-              SUBSCRIBE
-            </button>
-          </form>
+          <h3 className="text-xl  mb-4 font-serif">Map</h3>
+          <div>
+            <iframe
+              title="Sanika Baug Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.4127593488273!2d73.33927972620255!3d18.946834205848546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7fb8e775a93c1%3A0x58b38e567d801307!2sSanika%20Baug!5e0!3m2!1sen!2sin!4v1744714682230!5m2!1sen!2sin"
+              width="100%"
+              height="200"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="shadow-lg"
+            ></iframe>
+          </div>
         </div>
       </div>
 

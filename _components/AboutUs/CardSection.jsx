@@ -91,7 +91,7 @@ const CardSection = () => {
                       {/* Avatar */}
                       <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full border-2 border-white shadow-md overflow-hidden">
                         <Image
-                          src={IMAGES[1]}
+                          src={"https://img.freepik.com/free-photo/stylish-indian-beard-model-man-casual-clothes-posed-outdoor-street-india_627829-12953.jpg?semt=ais_hybrid&w=740"}
                           alt="Swapnil Dhavale"
                           width={800}
                           height={800}
@@ -124,7 +124,7 @@ const CardSection = () => {
                       {/* Avatar */}
                       <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full border-2 border-white shadow-md overflow-hidden">
                         <Image
-                          src={IMAGES[1]}
+                          src={"https://img.freepik.com/free-photo/indian-man-portrait-temple_53876-14535.jpg?ga=GA1.1.1981722286.1738842281&semt=ais_hybrid&w=740"}
                           alt="Swapnil Dhavale"
                           width={800}
                           height={800}

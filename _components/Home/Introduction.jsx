@@ -75,7 +75,7 @@ const Introduction = () => {
     },
     {
       name: "Rain Dance",
-      image: IMAGES[2],
+      image: IMAGES[78],
       features: [
         "14 Bedrooms with AC, Toilet, Batroom, Shower and Geaser",
         "2 Common Toilet Bathroom",
@@ -153,7 +153,12 @@ const Introduction = () => {
                   <span className="leading-loose">Surrounded by lush greenery and breathtaking natural beauty, Sanika Baug offers a serene and private escape while being conveniently close to Karjat&apos;s popular attractions. Whether you&apos;re relaxing amidst the peaceful farm surroundings, enjoying a cozy evening with loved ones, or exploring the nearby hills and rivers, Sanika Baug ensures a memorable and rejuvenating experience.
                     Experience the perfect harmony of nature and comfort at Sanika Baug — your idyllic farmstay retreat in Karjat!</span>
                 </p>
-                <Button className="mt-8 rounded-none p-8 bg-gray-700 text-gray-100"><span className="py-8 uppercase">Discover More</span></Button>
+                <Button
+                  className="mt-8 rounded-none p-8 bg-gray-700 text-gray-100"
+                  onPress={() => window.location.href = '/aboutus'}
+                >
+                  <span className="py-8 uppercase">Discover More</span>
+                </Button>
               </div>
             </div>
           </div>

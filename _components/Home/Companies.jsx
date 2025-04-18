@@ -91,7 +91,7 @@ const CorporateGuestsSection = () => {
                       {/* Avatar */}
                       <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full border-2 border-white shadow-md overflow-hidden">
                         <Image
-                          src={IMAGES[1]}
+                          src={"https://img.freepik.com/free-photo/stylish-indian-beard-model-man-casual-clothes-posed-outdoor-street-india_627829-12953.jpg?semt=ais_hybrid&w=740"}
                           alt="Swapnil Dhavale"
                           width={800}
                           height={800}
@@ -124,7 +124,7 @@ const CorporateGuestsSection = () => {
                       {/* Avatar */}
                       <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full border-2 border-white shadow-md overflow-hidden">
                         <Image
-                          src={IMAGES[1]}
+                          src={"https://img.freepik.com/free-photo/indian-man-portrait-temple_53876-14535.jpg?ga=GA1.1.1981722286.1738842281&semt=ais_hybrid&w=740"}
                           alt="Swapnil Dhavale"
                           width={800}
                           height={800}
@@ -139,6 +139,9 @@ const CorporateGuestsSection = () => {
 
 
                 </SwiperSlide>
+
+
+                
 
 
               </Swiper>
@@ -163,9 +166,9 @@ const CorporateGuestsSection = () => {
       >
         <div className="bg-black w-full h-full bg-opacity-50 p-8 rounded-md flex flex-col justify-center items-center text-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-6">
-            Looking for a Relaxing Villas <br /> Vacation Rental?
+            Looking for a Relaxing Vacation <br /> at Farmhouse?
           </h1>
-          <button className="bg-[#c47a5a] hover:bg-[#b1694a] text-white font-semibold py-3 px-6 rounded transition duration-300">
+          <button className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded transition duration-300">
             BOOK YOUR STAY
           </button>
         </div>

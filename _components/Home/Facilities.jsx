@@ -236,7 +236,7 @@ export default function Facilities() {
                 <h2 className="text-3xl md:text-5xl font-serif text-gray-800 mb-4">Our Best Amenities</h2>
                 <p className="text-gray-400 max-w-3xl mx-auto mb-12">
                     Enjoy luxury and comfort with spacious interiors, a private pool, lush gardens, modern entertainment,
-                    and scenic views. Experience a perfect blend of relaxation and elegance at LEXMOR!
+                    and scenic views. Experience a perfect blend of relaxation and elegance at Sanika Baug!
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 max-w-[93%] mx-auto px-4">

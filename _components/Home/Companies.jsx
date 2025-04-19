@@ -65,7 +65,7 @@ const CorporateGuestsSection = () => {
               >
                 <SwiperSlide className="flex flex-col">
                   
-                  <div className="h-[85vh] bg-gray-100">
+                  <div className="h-[100vh] bg-gray-100">
                     <div className="bg-white p-6 shadow-md text-center max-w-full mx-auto relative px-16">
                       <div className="flex justify-center items-center mb-4 pt-8">
                         <div className="bg-orange-100 rounded-full p-2">
@@ -98,7 +98,7 @@ const CorporateGuestsSection = () => {
                 </SwiperSlide>
 
                 <SwiperSlide className="flex flex-col">
-                  <div className="h-[85vh] bg-gray-100">
+                  <div className="h-[100vh] bg-gray-100">
                     <div className="bg-white p-6 shadow-md text-center max-w-full mx-auto relative px-16">
                       <div className="flex justify-center items-center mb-4 pt-8">
                         <div className="bg-orange-100 rounded-full p-2">
@@ -132,7 +132,7 @@ const CorporateGuestsSection = () => {
 
 
                 <SwiperSlide className="flex flex-col">
-                  <div className="h-[85vh] bg-gray-100">
+                  <div className="h-[100vh] bg-gray-100">
                     <div className="bg-white p-6 shadow-md text-center max-w-full mx-auto relative px-16">
                       <div className="flex justify-center items-center mb-4 pt-8">
                         <div className="bg-orange-100 rounded-full p-2">
@@ -168,7 +168,7 @@ Would definitely recommend it and can&apos;t wait to come back again!”
 
                 <SwiperSlide className="flex flex-col">
                   
-                  <div className="h-[85vh] bg-gray-100">
+                  <div className="h-[100vh] bg-gray-100">
                     <div className="bg-white p-6 shadow-md text-center max-w-full mx-auto relative px-16">
                       <div className="flex justify-center items-center mb-4 pt-8">
                         <div className="bg-orange-100 rounded-full p-2">

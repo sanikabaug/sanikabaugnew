@@ -1,11 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Button } from "@nextui-org/react";
-import { PhoneForwarded } from "lucide-react";
-import IMAGES from '@/public';
-import Image from "next/image";
-import { Clock, MapPin } from "lucide-react";
-import { Dish } from "./icons";
+import Swal from 'sweetalert2';
 
 const Placestovisit = () => {
 
@@ -44,18 +39,33 @@ const Placestovisit = () => {
       });
       const emailresult = await emailresponse.json();
 
-      alert("Request sent successfully!")
+      if (emailresponse.ok) {
+        Swal.fire({
+
+          title: "Form submitted successfully!",
+
+          text: "Team connect with you soon",
+
+          icon: "success"
+
+        }).then((result) => {
+
+          setFormData({
+            name: '',
+            phone: '',
+            email: '',
+            message: '',
+            termsAccepted: false,
+          })
+
+        });
+      } else {
+
+      }
 
     }
 
     sendEmail(formData)
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      message: '',
-      termsAccepted: false,
-    })
   };
 
 

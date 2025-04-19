@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
-  host: "smtp.gmail.com",
+  service: 'gmail',
+  host: 'smtp.gmail.com',
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -21,6 +21,8 @@ transporter.verify(function (error, success) {
 export async function POST(request) {
   const payload = await request.json();
 
+  console.log("payload::::>", payload)
+
 if (payload.operation === "sendcontactmail") {
 
     try {
@@ -30,8 +32,7 @@ if (payload.operation === "sendcontactmail") {
         formData
       } = payload;
 
-      console.log("Data:::::::::>", operation,
-        formData)
+
 
       await transporter.sendMail({
         from: process.env.EMAIL_USER,

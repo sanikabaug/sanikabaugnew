@@ -268,6 +268,7 @@
 'use client'
 import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 
 const ContactUs = () => {
 
@@ -305,17 +306,32 @@ const ContactUs = () => {
           });
           const emailresult = await emailresponse.json();
 
-          alert("Request sent successfully!")
+          if (emailresponse.ok) {
+                  Swal.fire({
+          
+                    title: "Form submitted successfully!",
+          
+                    text: "Team connect with you soon",
+          
+                    icon: "success"
+          
+                  }).then((result) => {
+                    
+                    setFormData({
+                      name: '',
+                      phone: '',
+                      email: '',
+                      message: '',
+                    })
+          
+                  });
+                } else {
+          
+                }
           
         }
 
         sendEmail(formData)
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: ''
-        })
 
   };
 

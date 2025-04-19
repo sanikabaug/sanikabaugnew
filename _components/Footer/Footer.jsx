@@ -79,7 +79,7 @@ export default function Footer() {
             <span className="font-bold">Email:</span> sanikabag1701@gmail.com
           </p>
           <p className="text-sm mb-4">
-            <span className="font-bold">Phone:</span> +91 82374 16879
+            <span className="font-bold">Phone:</span> +91 70831 66888
           </p>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-[#c47a5a]"><Facebook /></a>

@@ -360,7 +360,7 @@ const ContactUs = () => {
           <div className="flex items-center gap-3 text-md lg:text-sm">
             <div className='flex flex-col gap-2'>
               <div className='inline-flex gap-2'><FaPhoneAlt className="text-[#c47a5a]" /> Phone No</div>
-              <p>(+91) 96999 39307</p>
+              <p>(+91) 70831 66888</p>
             </div>
           </div>
           <div className='border-r-1 border-gray-600 h-12 hidden lg:block'></div>

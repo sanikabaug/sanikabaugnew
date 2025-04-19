@@ -6,7 +6,7 @@ import IMAGES from "@/public";
 import { Providers } from "@/app/providers";
 
 export const metadata = {
-  title: "Sanika Baug - Best Family Hotel in Halol Near karjat",
+  title: "Sanika Baug - A Luxury Farmstay Near karjat",
   description: "Best Family Farmstay in Karjat",
   icons: IMAGES.mainLogo,
 };

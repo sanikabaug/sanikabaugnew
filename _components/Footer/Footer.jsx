@@ -82,8 +82,8 @@ export default function Footer() {
             <span className="font-bold">Phone:</span> +91 70831 66888
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-[#c47a5a]"><Facebook /></a>
-            <a href="#" className="hover:text-[#c47a5a]"><Instagram /></a>
+            <a href="https://www.facebook.com/Sanikabaugfarmhouse/" className="hover:text-[#c47a5a]"><Facebook /></a>
+            <a href="https://www.instagram.com/sanika_baug" className="hover:text-[#c47a5a]"><Instagram /></a>
           </div>
         </div>
 

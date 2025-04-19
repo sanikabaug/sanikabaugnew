@@ -38,23 +38,23 @@ export const siteConfig = {
   hotellink: "https://www.hotelrajdhani.com/",
   favicon: "/img/sanikaimg/sanikalogo.png",
   ownername: "Amar",
-  Phone_Number: "9898309244",
-  phoneNumber: "9898309244",
+  Phone_Number: "7083166888",
+  phoneNumber: "7083166888",
   companyname: "Prospera Hospitality Pvt. Ltd.",
   companyweblink: "https://www.prosperaahospitality.com/",
-  email: "hotelrajdhani22@gmail.com",
-  address: "Godhra Road, Near V.M College, Halol, Gujarat, 389350",
-  telephone: ["9898309244", "7285899244"],
+  email: "sanikabag1701@gmail.com",
+  address: "At.bendesa, post, Posri road, tal, Tiware, Karjat, Maharashtra 410201",
+  telephone: ["7083166888", "7083166888"],
   AboutUs: "About Us",
-  reception_number: "9898309244",
-  Email: "hotelrajdhani22@gmail.com",
-  secondary_email: "atulbhai6544@gmail.com",
-  Address: "Godhra Road, Near V.M College, Halol, Gujarat, 389350",
+  reception_number: "7083166888",
+  Email: "sanikabag1701@gmail.com",
+  secondary_email: "sanikabag1701@gmail.com",
+  Address: "At.bendesa, post, Posri road, tal, Tiware, Karjat, Maharashtra 410201",
   lease_expiry_date: "01-02-2025",
 
 
   keywords: [
-    "Prospera",
+    "Sanika Baug",
   ],
 
   navItems: [
@@ -111,7 +111,7 @@ export const siteConfig = {
 
   socialItems : [
     { label: "Facebook", href: "https://www.facebook.com/share/15fydhXtLj/?mibextid=LQQJ4d", icon: FaFacebookF },
-    { label: "Instagram", href: "https://www.instagram.com/hotel_rajdhani_halol/profilecard/?igsh=aGlwaXVpY2k4ZW96", icon: FaInstagram },
+    { label: "Instagram", href: "https://www.instagram.com/sanika_baug", icon: FaInstagram },
     { label: "Twitter", href: "https://twitter.com/", icon: FaTwitter },
 ]
 };

@@ -358,10 +358,10 @@ const NavBar = () => {
 
               {/* Social Icons */}
               <div className="flex space-x-4 w-full justify-center items-center">
-                <a href="#" className="hover:text-[#c47a5a]">
+                <a href="https://www.facebook.com/Sanikabaugfarmhouse/" className="hover:text-[#c47a5a]">
                   <Facebook />
                 </a>
-                <a href="#" className="hover:text-[#c47a5a]">
+                <a href="https://www.instagram.com/sanika_baug/" className="hover:text-[#c47a5a]">
                   <Instagram />
                 </a>
               </div>

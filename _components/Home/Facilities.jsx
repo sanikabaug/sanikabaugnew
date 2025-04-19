@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import '@/app/styles/rooms.css';
 import Image from 'next/image';
@@ -68,22 +68,27 @@ export default function Facilities() {
                         spaceBetween={30}
                         centeredSlides={true}
                         navigation={{
-                          nextEl: '.swiper-button-next-custom',
-                          prevEl: '.swiper-button-prev-custom',
+                            nextEl: '.swiper-button-next-custom',
+                            prevEl: '.swiper-button-prev-custom',
                         }}
                         breakpoints={{
-                          320: {
-                            slidesPerView: 1,
-                          },
-                          640: {
-                            slidesPerView: 1.5,
-                          },
-                          1024: {
-                            slidesPerView: 2,
-                          },
+                            320: {
+                                slidesPerView: 1,
+                            },
+                            640: {
+                                slidesPerView: 1.5,
+                            },
+                            1024: {
+                                slidesPerView: 2,
+                            },
                         }}
-                        modules={[Navigation]}
+                        modules={[ Autoplay, Navigation ]}
                         className="mySwiper w-full h-full relative"
+                        loop={true}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
                     >
                         <SwiperSlide className="w-full h-full flex flex-col justify-center items-center bg-black">
                             <div className='bg-black flex flex-row gap-3 w-full h-full px-4'>

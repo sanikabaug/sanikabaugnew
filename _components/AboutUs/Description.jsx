@@ -31,8 +31,8 @@ export default function Description() {
 
                         <div className="bg-white w-[80%] lg:w-[25%] text-center py-8 mt-4 shadow-md absolute top-[17%] lg:top-[57%] font-serif">
                             <div className="text-2xl md:text-2xl text-[#0b2341] flex flex-col">
-                                <p>Amazing</p>
-                                <p>Gazebo</p>
+                                <p>Beautiful</p>
+                                <p>Lawn</p>
                             </div>
                         </div>
 
@@ -71,8 +71,8 @@ export default function Description() {
 
                     <div className="bg-white w-[80%] lg:w-[25%] text-center py-8 mt-4 shadow-md absolute top-[86%] lg:top-[57%] font-serif">
                         <div className="text-2xl text-[#0b2341] flex flex-col">
-                            <p>Beautiful</p>
-                            <p>Lawn</p>
+                            <p>Rain</p>
+                            <p>Dance</p>
                         </div>
                     </div>
 
